@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="yclugi">
+    <div class="row centered">
+    <div class="container">
+        <div class="col-lg-4">
+                 <a class="paric" href="/price/paric">
+                     <figure class="caption-shadow">
+                     <img src="{% static 'img/pricheska.jpg' %}">
+                        <figcaption>Услуги парикмахера</figcaption>
+                 </figure>
+                 </a>
+        </div>
+ <div class="col-lg-4">
+                 <a class="paric" href="/price/nogty">
+                 <figure class="caption-shadow">
+                     <img src="{% static 'img/nogty.jpg' %}">
+                        <figcaption>Ногтевой сервис</figcaption>
+                 </figure>
+                 </a>
+ </div>
+ <div class="col-lg-4">
+                 <a class="vizag" href="/price/other"> <figure class="caption-shadow">
+                     <img src="{% static 'img/vizag.jpg' %}">
+                        <figcaption>Шугаринг/Наращивание ресниц</figcaption>
+                 </figure>
+                 </a>
+        </div>
+     </div>
+    </div>
+    </div>
+
+
+
+{% endblock %}
+{% block headtext %}
+    <h1>Крутой заголовок.</h1>
+    <p>Мэрилин Монро — американская киноактриса, певица </p>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container other">
+    <div class="row centered">
+    <table align="center" border="2" width="100%" bordercolor=#000000>
+    <h1>Шугаринг/Наращивание ресниц</h1>
+    <tr>
+        <th width="50%" >Наименование услуги</th>
+        <th > Цена, руб.</th>
+    </tr>
+        <tr> <th colspan="2">Шугаринг</th> </tr>
+        {% for other_shuq in other_1 %}
+            <tr><td>{{ other_shuq.ycluga }}</td> <td> {{other_shuq.price }} </td>  </tr>
+        {% endfor %}
+    <tr> <th colspan="2">Наращивание ресниц</th> </tr>
+    {% for other_eyelashes in other_2 %}
+        <tr><td>{{ other_eyelashes.ycluga }}</td> <td> {{ other_eyelashes.price }} </td>  </tr>
+    {% endfor %}
+    </table>
+    <br>
+    <br>
+    </div>
+    </div>
+{% endblock %}
+{% block headtext %} <h3>В случае возникновения вопросов, Вы можете получить консультацию у менеджера</h3>{% endblock %}

@@ -1,0 +1,29 @@
+* {box-sizing: border-box;}
+.caption-shadow {
+  position: relative;
+  border: 5px solid rgba(159, 159, 159, 0.4);
+}
+.yclugi .centered img {
+  width: 300px;
+  height: 400px;
+}
+.caption-shadow figcaption {
+  width: 100%;
+  padding: 10px;
+  color: #000000;
+  font-family: 'Forum',cursive;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  background: rgba(159, 159, 159, 0.4);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.yclugi figure{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

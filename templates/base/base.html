@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Симона</title>
+     <link rel="stylesheet" href={% static 'css/bootstrap.css' %}>
+     <link rel="stylesheet" href={% static 'css/main.css' %}>
+     <link rel="stylesheet" href={% static 'css/price.css' %}>
+      <link rel="stylesheet" href={% static 'css/price2.css' %}>
+     <link  rel="stylesheet" href= {% static 'css/font-awesome.min.css' %}>
+     <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Indie+Flower" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+     <link rel="shortcut icon" href={% static 'img/logo.jpg'%}>
+     <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Poiret+One|Yanone+Kaffeesatz" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+ <body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="container">
+                  <div class="navbar-header">
+                 <a class="navbar-brand" href="/">H
+                 <i class="fa fa-scissors"> </i>
+                 C</a>
+         </div>
+         <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav navbar-right">
+                 <li><a href="/price">Услуги</a></li>
+                 <li><a href="/master">Специалисты</a></li>
+                 <li><a href="/works">Портфолио</a></li>
+                 <li><a href="/kontacts">Контакты</a></li>
+                 <li><a href="#">Отзывы</a></li>
+             </ul>
+         </div>
+     </div>
+ </div>
+ <div id="headerzaq">
+     <div class="container">
+         <div class="row centered">
+             <div class="col-lg-12">
+             {% block headtext %} {% endblock %}
+             </div>
+         </div>
+     </div>
+ </div>
+ {% block content %} {% endblock %}
+ <div class="myfooter">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-lg-6">
+                <h5>Связь</h5>
+                <p> <i class="fa fa-phone" aria-hidden="true"></i> Номер телефона: 0-000-000-00-00 </p>
+                <p> <i class="fa fa-envelope-open-o"> </i> Emai: aaaa.bbb@yandex.ru </p>
+                <p> <i class="fa fa-map"> </i> Адрес: г.ХХХ ул. УУУУ 2 </p>
+
+            </div>
+            <div class="col-lg-6">
+                <h5>Мы в социальных сетях</h5>
+             <p>
+                <a class="brand-tw" href="#"> <i class="fa fa-twitter" ></i>Ссылка</a>
+                <a class="brand-vk" href="#"><i class="fa fa-vk" href="#">Ссылка</i></a>
+             </p>
+             <p>
+                 <a class="barnd-od" href="#"><i class="fa fa-odnoklassniki" href="#">Ссылка</i></a>
+                 <a class="brand-i" href="#"><i class="fa fa-instagram" href="#">Ссылка</i></a>
+             </p>
+            </div>
+        </div>
+    </div>
+    <div class="copir">
+    <div class="container">
+        <div class="col-lg-12">
+             <h6><i class="fa fa-copyright">2017 RKM Все права защищены.</i></h6>
+        </div>
+    </div>
+    </div>
+</div>
+  </body>
+</html>

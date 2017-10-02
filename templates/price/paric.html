@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container paric">
+    <div class="row centered">
+    <table align="center" border="2" width="100%" bordercolor=#000000>
+    <h1>Парикмахерские услуги</h1>
+    <tr>
+        <th rowspan="2">Наименование услуги</th>
+        <th colspan="3"> Цена, руб.</th>
+    </tr>
+    <tr>
+        <th width="20%">короткие</th>
+        <th width="20%">средние(до 15см)</th>
+        <th width="20%">длинные (от 15см)</th>
+    </tr>
+    <tr> <th colspan="4">Женский зал</th> </tr>
+        {% for paric_woman in woman %}
+                {% if paric_woman.dlinna.pk == 6 %}
+                      <tr> <td>{{ paric_woman.ycluga }}</td>
+                         <td>{{ paric_woman.price }}</td>
+                     {% elif paric_woman.dlinna.pk == 7 %}
+                         <td>{{ paric_woman.price }}</td>
+                     {% elif paric_woman.dlinna.pk == 8 %}
+                         <td> {{ paric_woman.price }} </td> </tr>
+                      {% elif paric_woman.dlinna.pk == 9 %}
+                      <tr><td>{{ paric_woman.ycluga }}</td> <td colspan="3"> {{ paric_woman.price }} </td>  </tr>
+                {% endif %}
+         {% endfor %}
+    <tr> <th colspan="4">Мужской зал</th> </tr>
+    {% for paric_man in man %}
+        {% if paric_man.dlinna.pk == 9 %}
+                      <tr><td>{{ paric_man.ycluga }}</td> <td colspan="3"> {{ paric_man.price }} </td>  </tr>
+                {% endif %}
+         {% endfor %}
+    </table>
+    <br>
+    <br>
+    </div>
+    </div>
+{% endblock %}
+{% block headtext %} <h3>В случае возникновения вопросов, Вы можете получить консультацию у менеджера</h3>{% endblock %}

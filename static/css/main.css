@@ -1,0 +1,134 @@
+body {
+    background-color: lavenderblush;
+    font-weight: 800;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Indie Flower', cursive;;
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+}
+.centered{
+    text-align: center;
+}
+.navbar-inverse {
+    background: rgb(159, 159, 159);
+    border: 0;
+}
+.navbar-inverse .navbar-nav >li> a{
+    font-weight:800;
+    font-size: 20px;
+    color: black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-family: 'Bad Script', cursive;
+}
+.navbar-inverse .navbar-brand{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 2px;
+    padding-bottom: 16px;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    letter-spacing: 1px;
+}
+#headerzaq{
+    background: url(../img/zq.jpg) no-repeat center top;
+    margin-top:52px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    text-align: center;
+    background-attachment: inherit;
+    background-position: center center;
+    width: 100%;
+    background-size: 100%;
+    }
+#headerzaq  h1{
+     font-family:'Marck Script', cursive;
+    font-weight: 600;
+    color: rgba(76, 34, 82, 0.91);
+    font-size: 60px;
+
+}
+#headerzaq  h2{
+    font-family: 'Forum', cursive;
+    font-weight: 600;
+    color: black;
+    font-size: 30px;
+    padding-left: 50%;
+}
+#headerzaq p{
+    font-family: 'Forum',cursive;
+    font-size: 30px;
+    font-weight: 200;
+}
+.i{
+    padding-top: 30px;
+    }
+.i h4{
+    color: black;
+    font-size: 35px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 600;
+}
+.i p{
+    color: black;
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+}
+.i i{
+    color: black;
+    font-size: 35px;
+    font-weight: 300;
+}
+#my-slaide{
+    padding-top: 5px;
+    padding-bottom: 80px;
+    background-position: center center;
+}
+.item p{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.slide .item img{
+    height:700px;
+}
+.myfooter{
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background: rgba(159, 159, 159, 0.4);
+}
+.myfooter h5{
+    color: black;
+    font-weight:600;
+    font-size: 18px;
+    font-family: 'Bad Script', cursive;
+    line-height: 1;
+}
+.myfooter p{
+    color: black;
+    font-size: 15px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    line-height: 0.1;
+}
+.myfooter a{
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+    }
+.myfooter h6{
+    padding-right: 80%;
+    font-size: 13px;
+    font-weight: 800;
+}
+.myfooter .copir .container{
+    margin: 0;
+}

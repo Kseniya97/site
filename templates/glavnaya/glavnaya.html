@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+         <p> <img src="{% static 'img/1.jpg' %}"></p>
+        </div>
+        <div class="item">
+          <p> <img src="{% static 'img/2.jpg' %}"></p>
+        </div>
+        <div class="item">
+          <p> <img src="{% static 'img/3.jpg' %}"></p>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+ <div class="container i">
+     <div class="row centered">
+         <div class="col-lg-4">
+             <i class="fa fa-user-o" aria-hidden="true"></i>
+             <h4>Профессиональные мастера</h4>
+             <p>Специалисты нашего салона являются квалифицированными работниками сферы обслуживания.</p>
+         </div>
+         <div class="col-lg-4">
+             <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+             <h4>Качество</h4>
+             <p>В нашем салоне базовым приципом работы выступает качество оказанной услуги.</p>
+         </div>
+         <div class="col-lg-4">
+             <i class="fa fa-smile-o" aria-hidden="true"></i>
+             <h4>Комфорт</h4>
+             <p>Интерьер салона, а также используемое оборудование создадут для Вас комфортные условия.</p>
+         </div>
+     </div>
+ </div>
+{% endblock %}
+{% block headtext %} <h1>Истинная красота и женственность вне времени.</h1>
+                 <h2>Мэрилин Монро — американская киноактриса, певица </h2>{% endblock %}

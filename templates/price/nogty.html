@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container nails">
+        <div class="row centered">
+            <table align="center" border="2" width="100%" bordercolor=#000000>
+                <h1>Ногтевой сервис</h1>
+                <tr><th>Наименование услуги</th><th> Цена, руб.</th></tr>
+                {% for nails_null in nails_null %}
+                    <tr><td>{{ nails_null.ycluga }}</td><td>{{ nails_null.price }}</td></tr>
+            {% endfor %}
+                <tr><th colspan="2">Наращивание ногтей</th></tr>
+                {% for nails_2 in nails_2 %}
+                    <tr><td>{{ nails_2.ycluga }}</td><td>{{ nails_2.price }}</td></tr>
+                {% endfor %}
+                <tr><th colspan="2">Shellac</th></tr>
+                {% for nails_3 in nails_3 %}
+                    <tr><td>{{ nails_3.ycluga }}</td><td>{{ nails_3.price }}</td></tr>
+                {% endfor %}
+            </table>
+    <br>
+    <br>
+        </div>
+    </div>
+{% endblock %}
+{% block headtext %} <h3>В случае возникновения вопросов, Вы можете получить консультацию у менеджера</h3>{% endblock %}

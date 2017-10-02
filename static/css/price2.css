@@ -1,0 +1,67 @@
+.paric h1{
+    font-family: 'Forum', cursive;
+    font-weight: 800;
+    color: black;
+    font-size: 40px;
+}
+.paric th{
+     text-align: center;
+    font-family: "Forum",cursive;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.paric td{
+    font-family: 'Forum', cursive;
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+}
+.nails h1{
+    font-family: 'Forum', cursive;
+    font-weight: 800;
+    color: black;
+    font-size: 40px;
+}
+.nails th{
+     text-align: center;
+    font-family: "Forum",cursive;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.nails td{
+    font-family: 'Forum', cursive;
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+}
+.other th{
+    text-align: center;
+    font-family: "Forum",cursive;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.other td {
+    font-family: 'Forum', cursive;
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+.other h1{
+    font-family: 'Forum', cursive;
+    font-weight: 800;
+    color: black;
+    font-size: 40px;
+}
+h3{
+    font-family:'Marck Script', cursive;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.91);
+    font-size: 60px;
+}
